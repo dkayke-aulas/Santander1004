@@ -1,0 +1,61 @@
+* {
+  font-family: Arial;
+  font-size: 12px;
+}
+
+h1 {
+  color: yellowgreen;
+  background-color: #333;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+#identificador {
+  color: red;
+}
+
+.classe-p {
+  color: blue;
+}
+
+.classe-p-2 {
+  color: green;
+  font-style: italic;
+}
+
+.classe-p.classe-p-2.classe-p-3 {
+  color: palevioletred;
+}
+
+#banana.classe-p {
+  color: blue;
+}
+
+div p {
+  display: inline;
+  text-decoration: line-through;
+  color: peru;
+}
+
+section span > p {
+  color: blueviolet;
+}
+
+div + h2 {
+  color: deeppink;
+}
+
+aside ~ p {
+  color: aqua;
+}
+
+[data-fruta] {
+  color: gold;
+  text-decoration: overline;
+}
+
+[data-fruta="melancia"] {
+  color: rgb(122, 52, 226);
+  text-decoration: line-through;
+}
+
