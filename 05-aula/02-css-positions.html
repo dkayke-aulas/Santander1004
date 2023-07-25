@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 300vh;
+        }
+
+        section {
+            position: relative;
+            background-color: blueviolet;
+            width: 300px;
+            height: 600px;
+            /* margin-top: 100px; */
+            
+        }
+
+        div {
+            position: sticky;
+            background-color: yellowgreen;
+            width: 150px;
+            height: 250px;
+            top: 0px;
+            z-index: 2;
+        }
+        div:last-child {
+            position: sticky;
+            background-color: tomato;
+            width: 150px;
+            height: 150px;
+            top: 150px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <section>
+        <div></div>
+    </section>
+</body>
+
+</html>

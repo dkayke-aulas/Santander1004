@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        p {
+            font-family: Arial;
+            font-weight: 600;
+            color: yellowgreen;
+            font-size: 16px;
+        }
+
+        p.promocional::after {
+            content: '\263A';
+            color: white;
+            background-color: red;
+            width: 18px;
+            height: 18px;
+            display: inline-block;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="promocional">$500</p>
+    <p class="promocional">$300</p>
+    <p>$200</p>
+    <p class="promocional">$700</p>
+</body>
+
+</html>

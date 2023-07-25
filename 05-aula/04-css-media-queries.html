@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: violet;
+        }
+
+        /* de 0 a 500px de largura */
+        @media (max-width: 500px) {
+            h1 {
+                color: chartreuse;
+            }
+        }
+        
+        /* 500px a 550px de largura */
+        @media (min-width: 500px) and (max-width: 550px), (width: 555px) {
+            h1 {
+                color: chocolate;
+            }
+        }
+
+        /* landscape - horizontal */
+        /* portrait - vertical */
+        @media (orientation: landscape) {
+            h1 {
+                background-color: black;
+                color: yellowgreen;
+            }
+        }
+
+        @media print {
+            p {
+                display: none;
+            }
+            h1 { color: black; }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Media Query</h1>
+    <p>Meu pão é mais barato!</p>
+</body>
+
+</html>

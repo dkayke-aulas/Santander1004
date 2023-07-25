@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial;
+        }
+
+        div {
+            background-color: yellow;
+            display: flex;
+            gap: 10ppx;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+            border: 2px solid orange;
+            width: 150px;
+        }
+
+        div a:nth-child(1) {
+            color: red;
+            order: 1;
+        }
+
+        div a:nth-child(2) {
+            color: violet;
+            /* order: 1; */
+        }
+
+        div a:nth-child(3) {
+            color: darkblue;
+            order: 2;
+        }
+
+        div a:nth-child(4) {
+            color: yellowgreen;
+            order: 2;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        section {
+            background-color: orange;
+            width: 48px;
+            overflow: hidden;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#">1Home</a>
+        <a href="#">2Sobre</a>
+        <a href="#">3Historia</a>
+        <a href="#">4Contato</a>
+    </div>
+
+    <!-- <a href="./gatinho-legal.jpg" download>
+        <img src="./gatinho-legal.jpg" />
+    </a> -->
+
+    <!-- <section>
+        <p> Banana</p>
+    </section> -->
+
+</body>
+
+</html>
