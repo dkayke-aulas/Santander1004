@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100&display=swap');
+
+        @font-face {
+            font-family: "Trickster";
+            src: url(./fonts/Montserrat-Medium.ttf)
+        }
+
+        :root {
+            --quantidade-colunas: 5;
+            --quantidade-colunas-tablet: 3;
+            --quantidade-colunas-mobile: 1;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        section {
+            font-family: 'Trickster';
+            column-count: var(--quantidade-colunas);
+            max-width: 1000px;
+            margin: 0 auto;
+            column-gap: 10px;
+            /* column-rule: 2px solid yellowgreen; */
+        }
+
+        img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 5px #332;
+            margin-bottom: 10px;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        @media screen and (max-width:700px) {
+            section {
+                column-count: var(--quantidade-colunas-tablet);
+            }
+        }
+        
+        @media screen and (max-width:320px) {
+            section {
+                column-count: var(--quantidade-colunas-mobile);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Galeria topzera</h1>
+    </header>
+    <section>
+        <img src="https://source.unsplash.com/random/?animal">
+        <img src="https://source.unsplash.com/random/?fruit">
+        <img src="https://source.unsplash.com/random/?color">
+        <img src="https://source.unsplash.com/random/?instrument">
+        <img src="https://source.unsplash.com/random/?food">
+        <img src="https://source.unsplash.com/random/?sport">
+        <img src="https://source.unsplash.com/random/?books">
+        <img src="https://source.unsplash.com/random/?memes">
+        <img src="https://source.unsplash.com/random/?arts">
+
+        <img src="https://source.unsplash.com/random/?animal&1">
+        <img src="https://source.unsplash.com/random/?fruit&1">
+        <img src="https://source.unsplash.com/random/?color&1">
+        <img src="https://source.unsplash.com/random/?instrument&1">
+        <img src="https://source.unsplash.com/random/?food&1">
+        <img src="https://source.unsplash.com/random/?sport&1">
+        <img src="https://source.unsplash.com/random/?books&1">
+        <img src="https://source.unsplash.com/random/?memes&1">
+        <img src="https://source.unsplash.com/random/?arts&1">
+
+        <img src="https://source.unsplash.com/random/?animal&2">
+        <img src="https://source.unsplash.com/random/?fruit&2">
+        <img src="https://source.unsplash.com/random/?color&2">
+        <img src="https://source.unsplash.com/random/?instrument&2">
+        <img src="https://source.unsplash.com/random/?food&2">
+        <img src="https://source.unsplash.com/random/?sport&2">
+        <img src="https://source.unsplash.com/random/?books&2">
+        <img src="https://source.unsplash.com/random/?memes&2">
+        <img src="https://source.unsplash.com/random/?arts&2">
+
+        <img src="https://source.unsplash.com/random/?animal&3">
+        <img src="https://source.unsplash.com/random/?fruit&3">
+        <img src="https://source.unsplash.com/random/?color&3">
+        <img src="https://source.unsplash.com/random/?instrument&3">
+        <img src="https://source.unsplash.com/random/?food&3">
+        <img src="https://source.unsplash.com/random/?sport&3">
+        <img src="https://source.unsplash.com/random/?books&3">
+        <img src="https://source.unsplash.com/random/?memes&3">
+        <img src="https://source.unsplash.com/random/?arts&3">
+
+        <img src="https://source.unsplash.com/random/?animal&4">
+        <img src="https://source.unsplash.com/random/?fruit&4">
+        <img src="https://source.unsplash.com/random/?color&4">
+        <img src="https://source.unsplash.com/random/?instrument&4">
+        <img src="https://source.unsplash.com/random/?food&4">
+        <img src="https://source.unsplash.com/random/?sport&4">
+        <img src="https://source.unsplash.com/random/?books&4">
+        <img src="https://source.unsplash.com/random/?memes&4">
+        <img src="https://source.unsplash.com/random/?arts&4">
+
+    </section>
+
+</body>
+
+</html>

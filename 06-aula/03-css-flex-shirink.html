@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            max-width: 1000px;
+            width: 100%;
+            background-color: coral;
+            display: flex;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+            /* flex-direction: column; */
+        }
+
+        a {
+            text-decoration: none;
+            width: 200px;
+            background-color: rgba(56, 220, 124, 0.5);
+            color: white;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            border: 1px solid red;
+            /* flex: 1; */
+        }
+
+        a {
+            flex-shrink: 1;
+        }
+        
+        section a:nth-child(1) {
+            color: red;
+            flex-shrink: 3;
+            /* flex: 2; */
+        }
+        section a:nth-child(2) {
+            color: blue;
+        }
+        section a:nth-child(3) {
+            color: yellow;
+        }
+        section a:nth-child(4) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+        <a href="#">menu4</a>
+    </section>
+</body>
+</html>
