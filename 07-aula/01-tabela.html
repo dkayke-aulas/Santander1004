@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 3px solid rgb(92 165 112 / 51%);
+            width: 100%;
+        }
+
+        th {
+            border-collapse: collapse;
+            border: 3px solid #ffeb3bb4;
+        }
+
+        td {
+            border-collapse: collapse;
+            border: 3px solid blue;
+        }
+
+        .container {
+            max-width: 100vw;
+            background: #4caf506e;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption>Tabela de quantide de produtos</caption>
+
+            <thead>
+                <tr>
+                    <th colspan="2">Mês</th>
+                    <th>Janeiro</th>
+                    <th>Fevereiro</th>
+                    <th>Março</th>
+                    <th>Total geral</th>
+                </tr>
+
+                <tr>
+                    <th>Categoria</th>
+                    <th>Produto</th>
+                    <th colspan="3">Quantidade em estoque</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Frutas</td>
+                    <td>Banana</td>
+                    <td>1000</td>
+                    <td>1001</td>
+                    <td>1002</td>
+                    <td>1003</td>
+                </tr>
+                <tr>
+                    <td>Melancia</td>
+                    <td>2000</td>
+                    <td>2001</td>
+                    <td>2002</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>Tomate</td>
+                    <td>3000</td>
+                    <td>3001</td>
+                    <td>3002</td>
+                    <td>3003</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+
+</html>

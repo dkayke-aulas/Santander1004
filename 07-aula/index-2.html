@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section,
+        div {
+            display: flex;
+            justify-content: center;
+        }
+
+        section {
+            width: 150px;
+            justify-content: space-between;
+        }
+
+        div:first-of-type {
+            flex-direction: column;
+        }
+
+        span {
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            border-radius: 50%;
+            background-color: tomato;
+        }
+
+        span {
+            margin-top: 5px;
+        }
+
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p>Produto</p>
+            <p>$300</p>
+        </div>
+        <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 10px;
+        }
+        div {
+            background-color: blueviolet;
+            /* border: 1px solid yellow; */
+            /* margin: 10px; */
+        }
+
+        .container {
+            display: grid;
+            min-height: calc(100vh - 20px);
+            gap: 10px;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: 60px 1fr 80px;
+            grid-template-areas: 
+                "post1 nav1 nav2"
+                "texto texto post2"
+                "logo logo post2"
+            ;
+        }    
+
+        .banana {
+            grid-area: logo;    
+        }
+        </style>
+</head>
+<body>
+    <section class="container">
+        <div class="banana">1</div>
+        <div style="grid-area: nav1">2</div>
+        <div style="grid-area: nav2">3</div>
+        <div style="grid-area: texto">4</div>
+        <div style="grid-area: post1">5</div>
+        <div style="grid-area: post2">6</div>
+    </section>
+</body>
+</html>
